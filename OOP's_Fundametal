@@ -1,0 +1,20 @@
+class Cal{
+    int add(int n,int n2){
+        return n+n2;
+    }
+    int add(int n,int n2,int n3){
+        return n+n2+n3;
+    }
+    int add(int n,int n2,int n3,int n4){
+        return n+n2+n3+n4;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Cal obj = new Cal();int n=1,n2=2,n3=3,n4=4;
+        System.out.println(obj.add(n,n2));
+        System.out.println(obj.add(n,n2,n3));
+        System.out.println(obj.add(n,n2,n3,n4));
+    }
+}
