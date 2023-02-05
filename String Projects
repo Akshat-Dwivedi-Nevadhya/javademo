@@ -1,0 +1,55 @@
+class Main {
+    public static void main(String[] args) {
+        //Cas1 Reversing
+        String str1 = "Hello There";
+        int n = str1.length();
+        String str2 = "";
+        //for(int i=str1.length()-1;i>=0;i--)
+        //{
+        //  str2 = str2+str1.charAt(i);
+        //}
+        //System.out.println(str2);
+
+        // Case 2 Reversing
+        //String sarr[] = str1.split(" ");
+        //for(int i=sarr.length-1;i>=0;i--){
+        //  str2 = str2+sarr[i]+" ";
+        //}
+        //System.out.println(str2);
+
+        //Case 3 Reversing
+        //for(int i=str1.length()-1;i>=0;i--){
+        //  str2 = str2 + str1.charAt(i);
+        //}
+        //System.out.println(str2);
+
+        //Palindrome
+        //String s4 = "2552";
+        //for(int i = s4.length()-1;i>=0;i--){
+        //  str2 = str2+s4.charAt(i);
+        //}
+        //System.out.println((str2.equals(s4)? "Yes,It is a Palindrome" : "No,It is a Palindrome"));
+
+        // Anagram
+       // String s1 = "school master";
+        //String s2 = "the classroom";
+        //boolean ans = false;
+        //for (int i = 0; i <= s1.length() - 1; i++) {
+          //  if (s2.indexOf(s1.charAt(i)) != -1)
+            //    ans = true;
+            //else {
+              //  ans = false;
+                //break;
+            //}
+        //}
+        //if (ans)
+          //  System.out.println("Yes,It is an anagram.");
+        //else
+          //  System.out.println("No,It is not an anagram.");
+
+        String fname = "James";
+        String Iname = "Gosling";
+        System.out.println(fname=Iname);
+    }
+
+}
