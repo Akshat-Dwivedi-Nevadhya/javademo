@@ -1,0 +1,58 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+class Demo{
+    public void a()throws ArithmeticException
+    {
+        int n1 = 8,n2 = 0;
+        System.out.println(n1/n2);
+    }
+}
+
+public class ExceptionFirst{
+    public static void main(String[] args) {
+        int n1 = 6;
+        int n2 = -4;
+        int result;
+
+       // int arr[] = {1,2,3,4};
+        //try{
+          //  result = n1/n2;
+            //System.out.println(arr[5]);
+        //}
+        //catch (ArithmeticException e){
+          //  System.out.println("Cannot divide by zero.");
+        //}
+        //catch (ArrayIndexOutOfBoundsException e){
+          //  System.out.println("You went outside your limit");
+        //}
+        //catch (Exception e){
+          //  System.out.println("Something went wrong!!!");
+        //}
+
+        //try(Scanner sc = new Scanner(System.in)){
+         //   int num = sc.nextInt();
+        //}
+        //catch (InputMismatchException e){
+          //  System.out.println("Enter only number...");
+        //}
+        //System.out.println("Bye...");
+   // Demo d = new Demo();
+    //try {
+      //  d.a();
+    //}
+    //catch (ArithmeticException e){
+    //    System.out.println(e.getMessage());
+      try{
+          if(n2<0) {
+              Exception e = new ArithmeticException("Cannot divide by negative");
+              throw e;
+          }
+          else
+              System.out.println(n1/n2);
+      }
+      catch (Exception e){
+          System.out.println("Enter a valid number. "+e);
+      }
+    }
+}
